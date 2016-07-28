@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="8Gu-P1-C3L">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="8Gu-P1-C3L" secondAttribute="height" id="gbf-la-fC9"/>
+                                    <constraint firstAttribute="width" constant="240" id="mgN-58-Qe8">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="120"/>
+                                    </constraint>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="gbf-la-fC9"/>
+                                        <exclude reference="mgN-58-Qe8"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="gbf-la-fC9"/>
+                                        <include reference="mgN-58-Qe8"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="颜色渐变的UILabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ct-FR-QsT">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="MMm-XL-veW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="18"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="MMm-XL-veW"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="MMm-XL-veW"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8Gu-P1-C3L" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="70J-id-trP"/>
+                            <constraint firstItem="8Ct-FR-QsT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="grd-xz-gvo"/>
+                            <constraint firstItem="8Ct-FR-QsT" firstAttribute="top" secondItem="8Gu-P1-C3L" secondAttribute="bottom" constant="20" id="mx2-jL-3bp"/>
+                            <constraint firstItem="8Gu-P1-C3L" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="r0Y-0y-cFe"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="8Gu-P1-C3L"/>
+                                <exclude reference="8Ct-FR-QsT"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="70J-id-trP"/>
+                                <exclude reference="r0Y-0y-cFe"/>
+                                <exclude reference="grd-xz-gvo"/>
+                                <exclude reference="mx2-jL-3bp"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="8Gu-P1-C3L"/>
+                                <include reference="8Ct-FR-QsT"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="70J-id-trP"/>
+                                <include reference="r0Y-0y-cFe"/>
+                                <include reference="grd-xz-gvo"/>
+                                <include reference="mx2-jL-3bp"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="titleLabel" destination="8Ct-FR-QsT" id="16T-vV-BsX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="150" height="150"/>
+    </resources>
+</document>
