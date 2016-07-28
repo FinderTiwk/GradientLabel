@@ -36,7 +36,7 @@
     [_titleLabel addGradientColors:@[c1,c2,c3]
                          intervals:@[@(1.5),@(1.5),@(2.6)]
                            vectors:@[v1,v2,v3]
-                            hideen:NO
+                            hideen:YES
                        finishBlock:^{
                            
         NSLog(@"渐变完成了");
