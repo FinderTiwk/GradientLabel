@@ -1,8 +1,14 @@
 # GradientLabel
-为UILabe添加颜色渐变效果的Category
+> 为UILabe添加颜色渐变效果的Category
 
-## 0x00 效果如下
+![Version](https://img.shields.io/badge/pod-1.0.0-brightgreen.svg)
+![License](https://img.shields.io/badge/License-MIT-blue.svg)
+![Platform](https://img.shields.io/badge/Platform-iOS-orange.svg)
+![Author](https://img.shields.io/badge/Author-__Finder丶Tiwk-green.svg)
+
+## 0x00 效果
 ![](images/GradientLabel.gif)
+
 
 ## 0x01 使用
 
