@@ -18,80 +18,47 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="8Gu-P1-C3L">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="8Gu-P1-C3L">
+                                <rect key="frame" x="180" y="180" width="240" height="240"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="8Gu-P1-C3L" secondAttribute="height" id="gbf-la-fC9"/>
                                     <constraint firstAttribute="width" constant="240" id="mgN-58-Qe8">
                                         <variation key="heightClass=regular-widthClass=compact" constant="120"/>
                                     </constraint>
                                 </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="gbf-la-fC9"/>
-                                        <exclude reference="mgN-58-Qe8"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="gbf-la-fC9"/>
-                                        <include reference="mgN-58-Qe8"/>
-                                    </mask>
-                                </variation>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="颜色渐变的UILabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ct-FR-QsT">
-                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <rect key="frame" x="224.5" y="440" width="151" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="MMm-XL-veW"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="18"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="MMm-XL-veW"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="MMm-XL-veW"/>
-                                    </mask>
-                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ocr-nq-nyv">
+                                <rect key="frame" x="190.5" y="559.5" width="219.5" height="30.5"/>
+                                <string key="text" base64-UTF8="YES">
+Q29weXJpZ2h0IChjKSAyMDE25bm0IF9GaW5kZXLkuLZUaXdr76O/LgvigKhBbGwgcmlnaHRzIHJlc2Vy
+dmVkLg
+</string>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="8Gu-P1-C3L" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="70J-id-trP"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Ocr-nq-nyv" secondAttribute="bottom" constant="10" id="7ko-5k-Cvl"/>
                             <constraint firstItem="8Ct-FR-QsT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="grd-xz-gvo"/>
                             <constraint firstItem="8Ct-FR-QsT" firstAttribute="top" secondItem="8Gu-P1-C3L" secondAttribute="bottom" constant="20" id="mx2-jL-3bp"/>
                             <constraint firstItem="8Gu-P1-C3L" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="r0Y-0y-cFe"/>
+                            <constraint firstItem="Ocr-nq-nyv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tK3-mT-I9q"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="8Gu-P1-C3L"/>
-                                <exclude reference="8Ct-FR-QsT"/>
-                            </mask>
-                            <mask key="constraints">
-                                <exclude reference="70J-id-trP"/>
-                                <exclude reference="r0Y-0y-cFe"/>
-                                <exclude reference="grd-xz-gvo"/>
-                                <exclude reference="mx2-jL-3bp"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=regular-widthClass=compact">
-                            <mask key="subviews">
-                                <include reference="8Gu-P1-C3L"/>
-                                <include reference="8Ct-FR-QsT"/>
-                            </mask>
-                            <mask key="constraints">
-                                <include reference="70J-id-trP"/>
-                                <include reference="r0Y-0y-cFe"/>
-                                <include reference="grd-xz-gvo"/>
-                                <include reference="mx2-jL-3bp"/>
-                            </mask>
-                        </variation>
                     </view>
                     <connections>
+                        <outlet property="iconImageView" destination="8Gu-P1-C3L" id="j9n-D8-Syg"/>
                         <outlet property="titleLabel" destination="8Ct-FR-QsT" id="16T-vV-BsX"/>
                     </connections>
                 </viewController>
@@ -100,6 +67,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="logo" width="150" height="150"/>
+        <image name="avatar" width="90" height="90"/>
     </resources>
 </document>

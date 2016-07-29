@@ -22,7 +22,6 @@
 
 @end
 
-
 @implementation UILabel (Gradient)
 
 - (void)addGradientColors:(NSArray<UIColor *> *)colors
@@ -113,7 +112,7 @@ NSArray<NSNumber *> *__intervalsArray;
 }
 
 #pragma mark 添加动画图层
-static UIColor *__presentingColor;
+__weak static UIColor *__presentingColor;
 static CAGradientLayer *__gradientLayer;
 
 - (void)step:(NSUInteger)index{

@@ -22,7 +22,6 @@ CG_INLINE GradientVector GradientVectorMake(CGFloat x0,CGFloat y0,CGFloat x1,CGF
 }
 
 @interface NSValue (GradientVector)
-
 + (NSValue *)valueWithVector:(GradientVector)vector;
 - (GradientVector)gradientVectorValue;
 
